@@ -20,5 +20,8 @@ next\_stream\_fn receives a list of tuples where each tuple contains:
 Your next\_stream\_fn should use the value to determine which stream
 to return, and that stream will be used to drop the next value.
 
-Function returns an array of streams with the n dropped items distributed
+Drop returns an array of streams with the n dropped items distributed
 among them as determined by the next\_stream\_fn
+
+Take returns a plain list of values, taken from any of the list of streams
+as determined by the next\_stream\_fn
