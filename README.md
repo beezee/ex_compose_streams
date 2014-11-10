@@ -7,14 +7,14 @@ and a function which decides the next stream to use for each item that
 is taken or dropped
 
 ```
-ComposedStream.take(n, [stream, stream], next\_stream\_fn)
-ComposedStream.drop(n, [stream, stream], next\_stream\_fn)
+ComposedStream.take(n, [stream, stream], next_stream_fn)
+ComposedStream.drop(n, [stream, stream], next_stream_fn)
 ```
 
 next\_stream\_fn receives a list of tuples where each tuple contains:
 
 ```
-{stream, next\_value\_of\_stream}
+{stream, next_value_of_stream}
 ```
 
 Your next\_stream\_fn should use the value to determine which stream
